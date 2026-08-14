@@ -1,4 +1,4 @@
-# 🌐 Primeiros Passos com HTML - Parte 2
+# 🌐 Primeiros Passos com HTML - 2
 
 Este projeto tem como objetivo recriar a proposta da **Wikipedia**, aplicando um **layout mais moderno**, organizado e visualmente agradável, sem perder o foco principal: **conteúdo bem estruturado, semântico e acessível**.
 
