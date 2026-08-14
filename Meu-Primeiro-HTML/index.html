@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro HTML</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 id="inicio">Módulo 1 - Primeiros Passos com HTML</h1>
+        <hr>
+
+        <nav>
+            <h2>Índice</h2>
+            <ul>
+                <li><a href="#introducao">Introdução ao HTML na prática</a></li>
+                <li><a href="#formularios">Trabalhando com formulários em HTML</a></li>
+                <li><a href="#formatacoes">Estruturando seu HTML + Formatações</a></li>
+                <li><a href="#midias">Trabalhando com mídias utilizando HTML</a></li>
+                <li><a href="#tabelas">Criando tabelas com HTML</a></li>
+                <li><a href="#semantica">Entendendo HTML semântico</a></li>
+                <li><a href="#referencias">Links de referências</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2 id="introducao">Introdução ao HTML na prática</h2>
+            <p>O HTML (<em>HyperText Markup Language</em>) é a linguagem utilizada para criar e estruturar páginas na
+                internet.
+                Na prática, o HTML funciona por meio de <strong>tags</strong>, que indicam ao navegador como cada parte
+                do conteúdo deve
+                ser interpretada. Essas tags permitem organizar textos, inserir imagens, criar links, listas, tabelas e
+                formulários.</p>
+            <p>Ao escrever HTML, o desenvolvedor monta a estrutura da página, definindo o que é título, parágrafo, menu,
+                conteúdo principal e rodapé. Cada informação é envolvida por uma tag apropriada, o que torna o código
+                mais organizado e fácil de entender. Essa organização também melhora a <mark>acessibilidade</mark>,
+                permitindo que
+                leitores de tela identifiquem corretamente o conteúdo, e ajuda os motores de busca a compreenderem a
+                página.</p>
+            <p>Na prática, um documento HTML começa com a definição do tipo de documento e é dividido em duas partes
+                principais: o head, que contém informações sobre a página (como título e codificação), e o body, onde
+                fica todo o conteúdo visível ao usuário. A partir disso, o desenvolvedor pode ir adicionando elementos
+                conforme a necessidade do site.</p>
+            <p>Aprender HTML na prática significa compreender como essas tags se relacionam e como cada elemento
+                contribui para a construção de uma página funcional. Mesmo sendo uma linguagem simples, o HTML é
+                essencial, pois serve de base para outras tecnologias da web, como <u>CSS</u> e <u>JavaScript</u>.</p>
+
+            <p>Algumas das principais tags utilizadas na prática são:</p>
+            <ul>
+                <li>&lt;h1&gt; a &lt;h6&gt;: Títulos hierárquicos do conteúdo.</li>
+                <li>&lt;p&gt;: Parágrafo de texto.</li>
+                <li>&lt;strong&gt;: Texto de forte importância semântica. (Negrito)</li>
+                <li>&lt;mark&gt;: Texto destacado ou marcado. (Marca texto)</li>
+                <li>&lt;ul&gt;: Lista não ordenada.</li>
+                <li>&lt;ol&gt;: Lista ordenada.</li>
+                <li>&lt;li&gt;: Item da lista.</li>
+                <li>&lt;em&gt;: Texto enfatizado. (itálico)</li>
+                <li>&lt;u&gt;: Texto sublinhado.</li>
+                <li>&lt;a&gt;: Link para outro documento ou página.</li>
+            </ul>
+            <small><a href="#inicio">(voltar)</a></small>
+        </section>
+
+        <section>
+            <h2 id="formularios">Trabalhando com formulários em HTML</h2>
+            <p>Os formulários em HTML são utilizados para coletar dados do usuário e enviá-los para processamento,
+                geralmente em um servidor. Eles são muito comuns em páginas de cadastro, login, contato e pesquisas.</p>
+            <p>O elemento principal de um formulário é a tag &lt;form&gt;, que envolve todos os campos e define como os
+                dados serão enviados. Dentro dela, utilizamos diferentes tipos de campos para permitir a entrada de
+                informações, como textos, senhas, seleções e botões.</p>
+            <p>Cada campo de formulário possui uma função específica e deve ser identificado de forma clara para o
+                usuário. A tag &lt;label&gt; é usada para descrever o propósito de um campo, melhorando a usabilidade e
+                a acessibilidade. Já a tag &lt;input&gt; permite diferentes tipos de entrada de dados, como texto,
+                número, e-mail e senha, dependendo do valor atribuído ao seu atributo type.</p>
+            <p>Além dos campos básicos, o HTML oferece elementos como &lt;textarea&gt; para textos longos,
+                &lt;select&gt; para listas de opções e &lt;button&gt; para ações de envio ou interação. Os formulários
+                também podem ser organizados usando &lt;fieldset&gt; e &lt;legend&gt;, que agrupam campos relacionados e
+                tornam o formulário mais compreensível.</p>
+            <p>Trabalhar com formulários em HTML exige atenção à clareza, organização e acessibilidade, garantindo que
+                os dados sejam coletados de forma eficiente e que o usuário tenha uma boa experiência ao interagir com a
+                página.</p>
+
+            <p>Exemplo de formulário: </p>
+            <form name="signup" onsubmit="alert('Enviei o formulario')" autocomplete="off" method="post" action="#">
+                <label for="nome">Nome: </label>
+                <input type="text" name="name" /><br /><br />
+                <label for="idade">Idade: </label>
+                <input type="number" name="age" /><br /><br />
+                <label for="email">E-mail: </label>
+                <input type="email" name="email" /><br /><br />
+                <label for="senha">Senha: </label>
+                <input type="password" name="password" /><br /><br />
+                <button type="submit">Enviar</button>
+            </form>
+            <small><a href="#inicio">(voltar)</a></small>
+        </section>
+
+        <section>
+            <h2 id="formatacoes">Estruturando seu HTML + Formatações</h2>
+            <p>Estruturar corretamente um documento HTML é fundamental para garantir organização, leitura clara do
+                conteúdo e boa interpretação pelos navegadores. Uma boa estrutura começa pela separação lógica das
+                informações, utilizando títulos, parágrafos e seções bem definidas. Isso facilita tanto o
+                desenvolvimento quanto a manutenção do código.</p>
+            <p>A estrutura do HTML geralmente é composta por elementos principais que organizam o conteúdo da página.
+                Títulos ajudam a criar uma hierarquia de informações, enquanto parágrafos agrupam textos relacionados.
+                Além disso, o uso adequado de quebras de linha e listas contribui para uma apresentação mais clara do
+                conteúdo.</p>
+            <p>As formatações em HTML permitem destacar partes do texto e melhorar a compreensão da informação
+                apresentada. Elementos como negrito e itálico podem ser utilizados para chamar atenção para palavras
+                importantes, termos técnicos ou expressões específicas. Também é possível usar sublinhados, textos
+                menores e destaques para complementar a informação sem alterar o significado principal.</p>
+            <p>Ao estruturar e formatar um HTML, é importante manter o equilíbrio, utilizando apenas os elementos
+                necessários. Um código bem estruturado e com formatação adequada torna a página mais acessível,
+                organizada e compreensível para todos os usuários, servindo como uma base sólida para o uso de estilos e
+                funcionalidades mais avançadas no futuro.</p>
+            <small><a href="#inicio">(voltar)</a></small>
+        </section>
+
+        <section>
+            <h2 id="midias">Trabalhando com mídias utilizando HTML</h2>
+            <p>O HTML permite a inclusão de diferentes tipos de mídias em uma página web, como imagens, áudios e vídeos,
+                tornando o conteúdo mais dinâmico e atrativo para o usuário. Trabalhar com mídias é essencial para
+                enriquecer a experiência de navegação e facilitar a compreensão das informações apresentadas.</p>
+            <p>As imagens são amplamente utilizadas para ilustrar conteúdos e podem ser inseridas de forma simples,
+                sempre acompanhadas de descrições adequadas para garantir acessibilidade. Já os áudios possibilitam a
+                reprodução de sons, músicas ou narrações diretamente no navegador, sem a necessidade de programas
+                externos. Os vídeos, por sua vez, permitem a exibição de conteúdos audiovisuais como aulas,
+                apresentações e demonstrações.</p>
+            <p>O HTML também oferece recursos para organizar e contextualizar mídias, como legendas e descrições,
+                ajudando o usuário a entender o propósito daquele conteúdo. Além disso, é possível trabalhar com
+                diferentes formatos de arquivos, garantindo compatibilidade com diversos navegadores e dispositivos.</p>
+            <p>Ao utilizar mídias em HTML, é importante considerar fatores como acessibilidade, desempenho e clareza. O
+                uso consciente desses recursos contribui para páginas mais completas, informativas e com melhor
+                qualidade de apresentação.</p>
+
+            <p>Exemplos de mídias:</p>
+            <img title="Logotipo" alt="Descrição da imagem" src="img 1.png" width="200">
+            <video width="400" controls>
+                <source src="video 1.mp4">
+            </video>
+            <audio controls>
+                <source src="audio 1.mp3">
+            </audio>
+            <iframe src="http://dio.me" width="400" height="300"></iframe>
+            <br>
+            <small><a href="#inicio">(voltar)</a></small>
+        </section>
+
+        <section>
+            <h2 id="tabelas">Criando tabelas com HTML</h2>
+            <p>As tabelas em HTML são utilizadas para organizar e apresentar dados de forma estruturada, especialmente
+                quando há informações que precisam ser comparadas, como listas de preços, horários ou relatórios. Elas
+                permitem dispor os dados em linhas e colunas, facilitando a leitura e o entendimento.</p>
+            <p>A criação de uma tabela começa com a definição do seu elemento principal, onde todo o conteúdo tabular é
+                organizado. Dentro da tabela, as informações são separadas em linhas, e cada linha é dividida em
+                células. Algumas células podem representar dados comuns, enquanto outras servem como cabeçalhos,
+                identificando o significado de cada coluna ou linha.</p>
+            <p>Além da estrutura básica, as tabelas podem ser organizadas em partes distintas, como cabeçalho, corpo e
+                rodapé, o que torna o conteúdo mais semântico e acessível. Também é possível adicionar um título à
+                tabela, ajudando o usuário a compreender rapidamente o tipo de informação apresentada.</p>
+            <p>Ao criar tabelas em HTML, é importante utilizá-las apenas para dados tabulares, evitando seu uso para
+                layout da página. Uma tabela bem estruturada melhora a clareza da informação, a acessibilidade e a
+                manutenção do código.</p>
+
+            <p>Exemplo de tabela:</p>
+            <table summary="Tabela de informações" border="1" width="250" cellspacing="5" cellpadding="5"
+                align="center">
+                <caption>Informações Pessoais</caption>
+                <thead>
+                    <tr>
+                        <th title="Nome completo">Nome</th>
+                        <th>Idade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Luis</td>
+                        <td>22</td>
+                    </tr>
+                    <tr>
+                        <td>Gustavo</td>
+                        <td>44</td>
+                    </tr>
+                    <tr>
+                        <td>Rodrigues</td>
+                        <td>66</td>
+                    </tr>
+                    <tr>
+                        <td>Francisco</td>
+                        <td>88</td>
+                    </tr>
+                    <tr>
+                        <td>Tata</td>
+                        <td>11</td>
+                    </tr>
+                    <tr>
+                        <td>Bia</td>
+                        <td>33</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Total</td>
+                        <td>6</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <small><a href="#inicio">(voltar)</a></small>
+        </section>
+
+        <section>
+            <h2 id="semantica">Entendendo HTML semântico</h2>
+            <p>HTML semântico refere-se ao uso de elementos que descrevem claramente o significado do conteúdo presente
+                na página, e não apenas sua aparência visual. Esse conceito é fundamental para tornar o código mais
+                organizado, compreensível e acessível.</p>
+            <p>Ao utilizar HTML semântico, cada parte da página possui uma função bem definida. Isso facilita a leitura
+                do código por outros desenvolvedores, melhora a interpretação do conteúdo pelos navegadores e contribui
+                para a acessibilidade, permitindo que leitores de tela identifiquem corretamente as seções da página.
+            </p>
+            <p>Além disso, o uso de elementos semânticos impacta positivamente no SEO, pois mecanismos de busca
+                conseguem entender melhor a estrutura do conteúdo e sua relevância. Em vez de utilizar elementos
+                genéricos para tudo, o HTML semântico propõe o uso de elementos específicos para cabeçalhos, navegação,
+                conteúdo principal e rodapé.</p>
+            <p>Entender e aplicar o HTML semântico é uma prática essencial no desenvolvimento web moderno, pois resulta
+                em páginas mais bem estruturadas, eficientes e acessíveis para todos os usuários.</p>
+
+            <p>Algumas das principais tags semânticas utilizadas na prática são:</p>
+            <ul>
+                <li>&lt;header&gt;: Cabeçalho da página ou de uma seção (logo, título, menu).</li>
+                <li>&lt;nav&gt;: Área de navegação (menus, links).</li>
+                <li>&lt;main&gt;: Conteúdo principal da página (deve existir apenas um).</li>
+                <li>&lt;section&gt;: Seção de conteúdo relacionado dentro da página.</li>
+                <li>&lt;article&gt;: Conteúdo independente e reutilizável (post, notícia, comentário).</li>
+                <li>&lt;aside&gt;: Conteúdo complementar ou secundário (sidebar, anúncios).</li>
+                <li>&lt;footer&gt;: Rodapé da página ou de uma seção (direitos autorais, links finais).</li>
+            </ul>
+            <small><a href="#inicio">(voltar)</a></small>
+        </section>
+
+        <section>
+            <h2 id="referencias">Links de referências</h2>
+            <ul>
+                <li><a href="http://dio.me" target="_blank">DIO.me</a></li>
+                <li><a href="http://w3c.org" target="_blank">W3C</a></li>
+                <li><a href="http://github.com" target="_blank">Github</a></li>
+            </ul>
+            <small><a href="#inicio">(voltar)</a></small>
+        </section>
+    </main>
+    <footer>
+        <p>Conteúdo educacional sobre HTML</p>
+    </footer>
+
+</body>
+
+</html>
