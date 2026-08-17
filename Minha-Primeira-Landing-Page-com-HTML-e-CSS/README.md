@@ -5,13 +5,6 @@ O objetivo é praticar fundamentos de estruturação com HTML e estilização co
 
 ---
 
-## 🚀 Acesse o Projeto Online
-
-🔗 **Visualizar no GitHub Pages:**  
-https://luis-gustavo23.github.io/Minha-Primeira-Landing-Page-com-HTML-e-CSS/
-
----
-
 ## 🧠 O que foi aprendido
 
 Durante o desenvolvimento deste projeto, foram aplicados conceitos essenciais como:
@@ -46,24 +39,6 @@ Todo o layout foi desenvolvido sem frameworks, utilizando apenas CSS puro.
 
 - HTML5  
 - CSS3  
-
----
-
-## 📂 Estrutura de Arquivos
-
-```text
-📁 assets
-├── 📁 css
-│ └── styles.css
-├── 📁 images
-│ ├── banner.png
-│ ├── logo.png
-│ ├── woman-code.png
-│ ├── professional-challenges.png
-│ └── dio-logo.png
-index.html
-README.md
-```
 
 ---
 
