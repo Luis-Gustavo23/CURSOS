@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    color: white;
+    background-color: #0c1014;
+    width: 90%;
+    max-width: 960px;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    background-color: #05080a;
+    padding: 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-left: 16px;
+    letter-spacing: 2px;
+}
+
+header ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    font-size: 18px;
+    gap: 16px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 6px;
+    text-transform: uppercase;
+}
+
+header a:hover {
+    text-decoration: underline;
+    background-color: #cbe300;
+    color: #0c1014;
+}
+
+.container h2 {
+    font-size: 62px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 46px;
+}
+
+.plans {
+    display: flex;
+    gap: 16px;
+}
+
+.plan {
+    flex: 1;
+    background-color: #1f262c;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 5px 15px -6px black;
+    display: flex;
+    flex-direction: column;
+}
+
+.plan h2 {
+    text-transform: uppercase;
+    border-bottom: 2px solid #cbe300;
+    margin-top: 0;
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.plan p {
+    margin-top: 0;
+}
+
+.price span {
+    font-size: 34px;
+}
+
+.plan ul {
+    margin: 0 0 35px;
+    color: #b5b5b5;
+    padding-left: 16px;
+    line-height: 1.8;
+    flex: 1;
+}
+
+.plan li::marker {
+    color: #cbe300;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+.plan a {
+    text-decoration: none;
+    color: #0c1014;
+    background-color: #cbe300;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 16px 10px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
