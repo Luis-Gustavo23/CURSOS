@@ -27,17 +27,6 @@ O projeto é composto por:
 - **Navegação interna (anchors)** para facilitar o acesso às seções
 - **Footer** com informações legais e autoria
 
-Estrutura de pastas:
-
-```text
-assets/
-├── css/
-│ └── style.css
-├── images/
-│ └── Genshin Impact Logo.png
-index.html
-```
-
 ---
 
 ## 🧩 Semântica HTML
