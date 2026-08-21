@@ -8,7 +8,7 @@ Repositório com projetos, exercícios e experimentos desenvolvidos durante minh
 
 - [Meu Primeiro HTML](./Meu-Primeiro-HTML/) - Página introdutória para praticar a estrutura básica do HTML, textos, listas, links, formulários, mídias, tabelas e elementos semânticos.
 - [Meu Segundo HTML](./Meu-Segundo-HTML/) - Artigo enciclopédico sobre Genshin Impact, inspirado na Wikipedia, com navegação interna, sidebar, conteúdo multimídia e foco em semântica e acessibilidade.
-- [Meu Terceiro HTML](./Meu-Terceiro-HTML/) - Site com múltiplas páginas: página inicial, sobre, serviços e contato.
+- [Meu Terceiro HTML](./Meu-Terceiro-HTML/) - Site com múltiplas páginas: página inicial, sobre, serviços e contato, praticando navegação entre páginas, menu horizontal e estilização com CSS.
 
 ### HTML e CSS
 
@@ -20,6 +20,7 @@ Repositório com projetos, exercícios e experimentos desenvolvidos durante minh
 
 - [Classificador de Nível de Herói](./Classificador-de-Nivel-de-Heroi/) - Programa que classifica o nível de um herói de acordo com a quantidade de XP informada, praticando variáveis, comparações e estruturas condicionais.
 - [Calculadora de Partidas Rankeadas](./Calculadora-de-Partidas-Rankeadas/) - Programa que calcula o saldo de vitórias a partir da quantidade de vitórias e derrotas e classifica o nível do herói.
+- [Escrevendo as Classes de um Jogo](./Escrevendo-as-Classes-de-Um-Jogo/) - Programa que representa um herói com uma classe JavaScript e define seu tipo de ataque de acordo com a classe do personagem, praticando construtores, objetos e métodos.
 
 ### Estudos e documentação
 
