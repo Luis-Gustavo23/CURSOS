@@ -19,6 +19,11 @@ Repositório com projetos, exercícios e experimentos desenvolvidos durante minh
 ### JavaScript
 
 - [Classificador de Nível de Herói](./Classificador-de-Nivel-de-Heroi/) - Programa que classifica o nível de um herói de acordo com a quantidade de XP informada, praticando variáveis, comparações e estruturas condicionais.
+- [Calculadora de Partidas Rankeadas](./Calculadora-de-Partidas-Rankeadas/) - Programa que calcula o saldo de vitórias a partir da quantidade de vitórias e derrotas e classifica o nível do herói.
+
+### Estudos e documentação
+
+- [Caderno Temático no NotebookLM](./NotebookLM/) - Registro de estudos sobre desenvolvimento Full-Stack em 2026, incluindo trilhas de aprendizagem, tecnologias, fontes pesquisadas e prompts reutilizáveis.
 
 ## 🎯 Objetivos
 
@@ -43,15 +48,21 @@ Os projetos são estáticos e não precisam de instalação de dependências.
 2. Abra a pasta do projeto desejado.
 3. Abra o arquivo `index.html` diretamente no navegador ou use a extensão **Live Server** do VS Code.
 
-Para executar o classificador, abra um terminal na pasta [Classificador-de-Nivel-de-Heroi](./Classificador-de-Nivel-de-Heroi/) e rode:
+Para executar os projetos JavaScript, abra um terminal na pasta correspondente e rode:
 
 ```bash
+cd Classificador-de-Nivel-de-Heroi
 node Classificador.js
+```
+
+```bash
+cd Calculadora-de-Partidas-Rankeadas
+node calculadora.js
 ```
 
 ## 🗂️ Organização
 
-Cada projeto mantém seus próprios arquivos HTML, CSS, JavaScript, imagens e README quando necessário. Assim, os exemplos podem ser estudados e executados de forma independente.
+Cada projeto mantém seus próprios arquivos HTML, CSS, JavaScript, imagens ou documentação. Assim, os exemplos podem ser estudados e executados de forma independente.
 
 ## 📖 Documentação
 
